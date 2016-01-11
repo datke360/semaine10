@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+      <meta charset="utf-8">
+      <title>Cookie Clicker</title>
+      <script src="JS/script3.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/style.css">
+
+        <script language="javascript" type="text/javascript">
+            var compte = 66;
+            function decompte()
+            {
+                    if(compte <= 1) {
+                    pluriel = "";
+                    } else {
+                    pluriel = "s";
+                    }
+             
+                document.getElementById("compt").innerHTML = compte + " seconde" + pluriel;
+             
+                    if(compte == 0 || compte <= 0) {
+                    compte = 0;
+             
+                    clearInterval(timer);
+                    }
+             
+                compte--;
+            }
+            var timer = setInterval('decompte()',1000);
+        </script>
+
+    </head>
+    
+    <header>
+        <div class="container">
+			<div class="col-xs-12">
+				<div class="row">
+				    <div class="entete">
+				        <h1>Cookie Clicker</h1>
+				    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <body onload="decompte();">
+        
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="row">
+                    <p>Cliquez sur le cookie !!</p>
+                        <img src="images/flecheG.gif" id="flecheG" style="width:10%"></img>
+                        <img src="images/cookie_bouton.png" id="bouton" style="width:18%" onMouseDown="mouseDown()" onMouseUp="mouseUp()"></img>
+                        <img src="images/flecheD.gif" id="flecheD" style="width:10%"></img>
+                </div>
+            </div>
+        </div>
+        
+        <marquee direction="left" scrollamount="15">Essayez d'obtenir 2000 cookies en <span id="compt"></span> !  <img src="images/smiley.png" id="smiley" style="width:7%"></img></marquee> <br>
+        <button id="multiplicateur">Multiplicateur x1</button> <br>
+        <button id="autoclick" class="btn btn-primary">Auto Click</button> 
+        
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div id="affichage"></div>
+                </div>
+            </div>            
+        </div>
+
+      <script src="JS/script.js"></script>
+      <script src="JS/script2.js"></script>
+
+    </body>
+</html>

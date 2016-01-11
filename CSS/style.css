@@ -1,0 +1,56 @@
+header {
+    background:url("../images/cookie_entete.jpg");
+    position:relative;
+    text-align:center;
+    border-style:groove;
+    border-color:red;
+    font-size:30px;
+    font-family:script;
+    margin-bottom:20px;
+}
+
+p{
+    font-family:groove;
+    font-size: 20px;
+    color:#FF4500;
+}
+
+body{
+    background-color:#F5DEB3;
+    text-align:center;
+}
+
+
+button {
+    background-color:#F78181;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+#affichage {
+    font-size:50px;
+    border-color:blue;
+    border: 5px dotted;
+    margin-left:300px;
+    margin-right:300px;
+    margin-top:30px;
+    font-family:script;
+}
+
+#smiley{
+    border-radius:500px;
+    text-align:center;
+}
+
+marquee{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:20px;
+    margin-top:20px;
+    height:100px;
+}
+
+#compt{
+    color:red;
+    text-decoration:underline;
+}
