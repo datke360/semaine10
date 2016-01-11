@@ -1,4 +1,4 @@
- var compte = 66;
+ var compte = 70;
             function decompte()
             {
                     if(compte <= 1) {
